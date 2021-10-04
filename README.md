@@ -1,4 +1,4 @@
-# free
+Friotec
 
 ## Project setup
 ```
