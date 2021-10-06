@@ -1,7 +1,10 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/" exact>Início</router-link>
+    <router-link to="/about" exact>Sobre nós</router-link>
+    <router-link to="parceiros" exact>Principais parceiros</router-link>
+    <router-link to="localizacao" exact>Localização</router-link>
+    <router-link to="contato" exact>Contate-nos</router-link>
   </div>
   <router-view />
 </template>
@@ -21,10 +24,17 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
+  background: #76708b;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
+  background: #241654;
+  cursor: initial;
 }
 </style>
